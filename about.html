@@ -5,22 +5,15 @@ description: "Welcome, I am itsoo"
 header-img: "img/post-bg-coffee.jpg"
 ---
 
-<!-- Chinese Version -->
 <div class="zh post-container">
     <!--copied from markdown -->
     <blockquote>我处理冷嘲热讽的方式，<br>
     就是看一眼今日银行卡的收入。</blockquote>
-
     <p>欢迎来到我个人博客，这里是 itsoo's blog</p>
-
     <p>我爱工作，我热爱工作，工作使我快乐！好高兴哦！又可以加班了！快别让我停下来，Working makes me happy</p>
-
     <p>这是通过 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的个人博客。这里是我在 GitHub 上的主页 <a href="https://github.com/itsoo">https://github.com/itsoo</a></p>
-
     <p></p>
-    
     <h5>Thanks</h5>
-
     <ul>
         <li><a href="https://github.com">GitHub</a></li>
         <li><a href="http://jekyll.com.cn/">jekyll</a></li>
@@ -91,28 +84,3 @@ header-img: "img/post-bg-coffee.jpg"
 </script>
 {% endif %}
 <!-- Gitalk end -->
-
- <!-- disqus 评论框 start  -->
-{% if site.disqus.enable %}
-
-<div class="comment">
-    <div id="disqus_thread" class="disqus-thread">
-    </div>
-</div>
-<!-- disqus 评论框 end -->
-
-<!-- disqus 公共JS代码 start -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus.username}}";
-    var disqus_identifier = "{{site.disqus.username}}/{{page.url}}";
-    var disqus_url = "{{site.url}}{{page.url}}";
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<!-- disqus 公共JS代码 end -->
-{% endif %}

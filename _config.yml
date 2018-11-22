@@ -38,7 +38,8 @@ highlighter: rouge
 kramdown:
   input: GFM
 
-# 评论系统 Gitalk
+# 评论系统
+# Gitalk
 gitalk:
   enable: true
   clientID: e3152622bfff3e95dca5
@@ -48,8 +49,8 @@ gitalk:
   admin: itsoo
   distractionFreeMode: true
 
-# 统计 Analytics settings
-# Baidu Analytics
+# 百度统计
+# Analytics settings
 ba_track_id: 022cc3095d68e9f91bf380b0493df57d
 
 # Featured Tags
