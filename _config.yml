@@ -1,0 +1,110 @@
+# Site settings
+title: itsoo's blog
+SEOTitle: itsoo's blog
+header-img: img/post-bg-desk.jpg
+email: 84235789@qq.com
+description: "Every failure is leading towards success."
+keyword: "itsoo, itsoo's blog, itsoo的博客, java, javascript, web开发"
+url: "http://itsoo.github.io"          # your host, for absolute URL
+baseurl: ""                            # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/itsoo/itsoo.github.io.git" # you code repository
+
+# Sidebar settings
+sidebar: true                          # whether or not using Sidebar.
+sidebar-about-description: "Coding mylife and keep learning, Write less, Do more"
+sidebar-avatar: /img/avatar.jpg        # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# SNS settings
+RSS: false
+zhihu_username:    itsoo
+github_username:   itsoo
+jianshu_username:  itsoo
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# 评论系统 Gitalk
+gitalk:
+  enable: true                          # 是否开启Gitalk评论
+  clientID: e3152622bfff3e95dca5                            #生成的clientID
+  clientSecret: e84f76f8cf2084a6b165c00020726779ad8e4f99    #生成的clientSecret
+  repo: itsoo.github.io                 # 仓库名称
+  owner: itsoo                          # github用户名
+  admin: itsoo
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+
+# 统计 Analytics settings
+# Baidu Analytics
+ba_track_id: 022cc3095d68e9f91bf380b0493df57d
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "KoaJS",
+        href: "https://koajs.com"
+    },{
+        title: "MongoDB",
+        href: "https://www.mongodb.com"
+    },{
+        title: "JavaScript",
+        href: "https://www.javascript.com"
+    },{
+        title: "JAVA",
+        href: "https://www.oracle.com/java/"
+    },{
+        title: "NodeJS",
+        href: "https://nodejs.org/en/"
+    },{
+        title: "webpack",
+        href: "https://webpack.js.org"
+    },{
+        title: "MySQL",
+        href: "https://www.mysql.com"
+    },{
+        title: "Spring",
+        href: "https://spring.io"
+    }
+]
