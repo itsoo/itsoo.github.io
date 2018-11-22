@@ -2,14 +2,9 @@
 layout: default
 ---
 
-<!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
-
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
-        /*background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')*/
         height: 500px;
         overflow: hidden;
     }
@@ -20,16 +15,15 @@ layout: default
     }
     /* Override Nav Style */
     {% if page.navcolor == "invert" %}
-        .navbar-custom .nav li a,
-        .navbar-custom .nav li a:hover,
-        .navbar-custom .navbar-brand,
-        .navbar-custom .navbar-brand:hover {color:#777;}
-        .navbar-default .navbar-toggle .icon-bar {background-color:#777;}
-
+    .navbar-custom .nav li a,
+    .navbar-custom .nav li a:hover,
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-brand:hover {color:#777;}
+    .navbar-default .navbar-toggle .icon-bar {background-color:#777;}
     {% endif %}
 </style>
-<header class="intro-header" >
-    <iframe src="{{page.iframe}}"/>
+<header class="intro-header">
+    <iframe src="{{page.iframe}}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -58,17 +52,10 @@ layout: default
 <article>
     <div class="container">
         <div class="row">
-
             <!-- Post Container -->
-            <div class="post-container
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1 ">
-
+            <div class="post-container col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 				{{ content }}
-
                 <hr style="visibility: hidden;">
-
-
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
@@ -118,14 +105,10 @@ layout: default
                 </div>
                 <!-- disqus 评论框 end -->
                 {% endif %}
-
             </div>
 
             <!-- Sidebar Container -->
-            <div class="sidebar-container
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1 ">
-
+            <div class="sidebar-container col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <!-- Featured Tags -->
                 {% if site.featured-tags %}
                 <section>
@@ -181,8 +164,6 @@ layout: default
     resize();
 </script>
 
-
-
 {% if site.disqus.enable %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
@@ -199,7 +180,6 @@ layout: default
 </script>
 <!-- disqus 公共JS代码 end -->
 {% endif %}
-
 
 {% if site.anchorjs %}
 <!-- async load function -->
